@@ -167,3 +167,43 @@ body, html {
 label{
   font-weight: bold;
 }
+
+
+/*  ==  nav ==*/
+nav.nav{
+  display: block;
+}
+
+
+nav.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav.nav li {
+  float: left;
+}
+
+nav.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav.nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+nav.nav li a.active {
+  background-color: #4CAF50;
+}
+
+/*  ==  //nav ==*/
