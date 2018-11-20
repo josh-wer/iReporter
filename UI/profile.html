@@ -67,55 +67,26 @@
 
     <div class="grid-6">
       <div class="grid-12">
-        <div class="grid-12 text-center" style="font-weight: bold; margin-bottom: 6px">Red-Flags</div>
+        <div class="grid-12 text-center" style="font-weight: bold; margin-bottom: 6px">Incidents</div>
         <div class="grid-12 text-center">
-          <div class="grid-3 sustain">
+          <div class="grid-3 sustain" title="20 red-flags and 14 interventions">
             <div class="situation-count">34</div>
             <div class="situation-state">Created</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div class="situation-count">34</div>
-            <div class="situation-state">Pending</div>
+            <div class="situation-count">10</div>
+            <div class="situation-state">Under investigation</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div class="situation-count">34</div>
-            <div class="situation-state">Resolved</div>
-          </div>
-
-          <div class="grid-3 sustain">
-            <div class="situation-count">34</div>
+            <div class="situation-count">9</div>
             <div class="situation-state">Rejected</div>
           </div>
-        </div>
-      </div>
-
-      <div class="grid-12">
-        <br>
-      </div>
-
-      <div class="grid-12">
-        <div class="grid-12 text-center" style="font-weight: bold; margin-bottom: 6px">Interventions</div>
-        <div class="grid-12 text-center">
-          <div class="grid-3 sustain">
-            <div class="situation-count">34</div>
-            <div class="situation-state">Created</div>
-          </div>
 
           <div class="grid-3 sustain">
-            <div class="situation-count">34</div>
-            <div class="situation-state">Pending</div>
-          </div>
-
-          <div class="grid-3 sustain">
-            <div class="situation-count">34</div>
+            <div class="situation-count">15</div>
             <div class="situation-state">Resolved</div>
-          </div>
-
-          <div class="grid-3 sustain">
-            <div class="situation-count">34</div>
-            <div class="situation-state">Rejected</div>
           </div>
         </div>
       </div>
@@ -124,47 +95,19 @@
 
 
   <div class="grids">
-    <div class="grid-8 centralize">
-      <h2>Red-flags</h2>
-      <div>
+    <div class="grid-10 centralize">
+      <h2>Created Incidents</h2>
 
-        <table class="table">
-          <thead>
-          <tr>
-            <th>Title</th>
-            <th>Status</th>
-            <th>Location</th>
-            <th></th>
-          </tr>
-          </thead>
-
-          <tbody>
-          <tr>
-            <td>Local government chairman compromised</td>
-            <td><i class="dot bg-dark"></i> pending</td>
-            <td><a href="">17.2465864, 4.189465457</a></td>
-            <td><button class="btn btn-info sm"><i class="ic ic-edit"></i></button> <button class="btn btn-danger sm"><i class="ic ic-delete"></i></button></td>
-          </tr>
-
-          <tr>
-            <td>Excesive bribes collected by police force</td>
-            <td><i class="dot bg-danger"></i> rejected</td>
-            <td><a href="">17.2465864, 4.189465457</a></td>
-            <td></td>
-          </tr>
-          </tbody>
-        </table>
-
+      <div class="text-right">
+        <a href="create-incident.html" class="btn btn-primary sm">+ Create incident</a>
+        <br><br>
       </div>
 
-      <br><br>
-
-
-      <h2>Interventions</h2>
       <div>
         <table class="table">
           <thead>
           <tr>
+            <th></th>
             <th>Title</th>
             <th>Status</th>
             <th>Location</th>
@@ -174,21 +117,40 @@
 
           <tbody>
           <tr>
-            <td>Drainage system blocked</td>
+            <td>Red-flags</td>
+            <td><a href="view-incident.html">Local government chairman compromised</a></td>
+            <td><i class="dot bg-dark"></i> draft</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td><a href="edit-incident.html" class="btn btn-info xs"><i class="ic ic-edit"></i></a> <button class="btn btn-danger xs"><i class="ic ic-delete"></i></button></td>
+          </tr>
+
+          <tr>
+            <td>Interventions</td>
+            <td><a href="view-incident.html">Drainage system blocked</a></td>
             <td><i class="dot bg-success"></i> resolved</td>
             <td><a href="">17.2465864, 4.189465457</a></td>
             <td></td>
           </tr>
 
           <tr>
-            <td>Flooding in area</td>
-            <td><i class="dot bg-dark"></i> pending</td>
+            <td>Interventions</td>
+            <td><a href="view-incident.html">Flooding in area</a></td>
+            <td><i class="dot bg-dark"></i> draft</td>
             <td><a href="">17.2465864, 4.189465457</a></td>
-            <td><button class="btn btn-info sm"><i class="ic ic-edit"></i></button> <button class="btn btn-danger sm"><i class="ic ic-delete"></i></button></td>
+            <td><a href="edit-incident.html" class="btn btn-info xs"><i class="ic ic-edit"></i></a> <button class="btn btn-danger xs"><i class="ic ic-delete"></i></button></td>
           </tr>
 
           <tr>
-            <td>No electricity supply for 3 weeks</td>
+            <td>Red-flags</td>
+            <td><a href="view-incident.html">Excessive bribes collected by police force</a></td>
+            <td><i class="dot bg-danger"></i> rejected</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Interventions</td>
+            <td><a href="view-incident.html">No electricity supply for 3 weeks</a></td>
             <td><i class="dot bg-info"></i> under investigation</td>
             <td><a href="">17.2465864, 4.189465457</a></td>
             <td></td>
