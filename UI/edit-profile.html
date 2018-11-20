@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="assets/css/app.css"/>
+</head>
+
+<body>
+<nav class="nav">
+  <div style="float: left; color: white; font-size: 20px; padding: 24px 18px; margin-right: 8px;">
+    iReporter
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.asp">News</a></li>
+    <li><a href="contact.asp">Contact</a></li>
+    <li><a href="about.asp">About</a></li>
+  </ul>
+
+
+  <ul class="right">
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="register.html">Sign up</a></li>
+    <li><a href="login.html">Sign in</a></li>
+  </ul>
+</nav>
+<div style="height: 100px;"></div>
+
+<div class="container">
+
+  <div class="grids">
+    <div class="grid-8 centralize">
+      <div class="text-center">
+        <img src="assets/images/profile1.jpg" alt="John Doe photo" style="background-color: #1b6d85; width: 150px; height: 150px; display: inline-block;">
+        <div>
+          <button class="btn btn-primary xs">Upload</button>
+          <button class="btn btn-danger xs">Delete</button>
+        </div>
+      </div>
+
+      <div class="grids">
+        <h3>Update profile</h3>
+        <form action="#" method="post">
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-firstname">FirstName</label>
+            <div class="grid-8">
+              <input type="text" name="firstname" class="form-input" id="prof-firstname" placeholder="FirstName" value="John">
+            </div>
+          </div>
+
+
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-lastname">LastName</label>
+            <div class="grid-8">
+              <input type="text" name="lastname" class="form-input" id="prof-lastname" placeholder="LastName" value="Doe">
+            </div>
+          </div>
+
+
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-othernames">Other Names</label>
+            <div class="grid-8">
+              <input type="text" name="othernames" class="form-input" id="prof-othernames" placeholder="Other Names">
+            </div>
+          </div>
+
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-email">Email</label>
+            <div class="grid-8">
+              <input type="email" name="email" class="form-input" id="prof-email" placeholder="Email" value="johndoe@gmail.com">
+            </div>
+          </div>
+
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-phone">Phone Number</label>
+            <div class="grid-8">
+              <input type="text" name="phone" class="form-input" id="prof-phone" placeholder="Phone Number" value="2348161584569">
+            </div>
+          </div>
+
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-username">Username</label>
+            <div class="grid-8">
+              <input type="text" name="username" class="form-input" id="prof-username" placeholder="Username" value="john.doe">
+            </div>
+          </div>
+
+          <div class="grid-8 right">
+            <button type="submit" class="btn btn-primary" name="register">Save</button>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      <hr>
+
+      <div class="grids">
+        <h3>Change password</h3>
+        <form method="post">
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-password">Old Password</label>
+            <div class="grid-8">
+              <input type="password" name="password" class="form-input" id="prof-password" placeholder="Old Password">
+            </div>
+          </div>
+
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-new-password">Re-enter New Password</label>
+            <div class="grid-8">
+              <input type="password" name="new password_confirmation" class="form-input" id="prof-new-password" placeholder="New Password">
+            </div>
+          </div>
+
+          <div class="grids">
+            <label class="grid-4 label-grid" for="prof-new-password-confirm">Re-enter New Password</label>
+            <div class="grid-8">
+              <input type="password" name="new password_confirmation" class="form-input" id="prof-new-password-confirm" placeholder="Re-enter New Password">
+            </div>
+          </div>
+
+          <div class="grid-8 right">
+            <button type="submit" class="btn btn-primary" name="register">Change password</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

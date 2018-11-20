@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Register</title>
+  <title>Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="assets/css/app.css"/>
 
@@ -17,6 +17,15 @@
 
     table.table td{
       padding: 14px 20px;
+    }
+
+    .situation-count{
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .situation-state{
+      font-size: 12px;
     }
   </style>
 </head>
@@ -35,6 +44,7 @@
 
 
   <ul class="right">
+    <li><a href="profile.html">Profile</a></li>
     <li><a href="register.html">Sign up</a></li>
     <li><a href="login.html">Sign in</a></li>
   </ul>
@@ -45,13 +55,13 @@
   <div class="grids">
     <div class="grid-6">
       <div class="grid-6 text-center">
-        <div style="background-color: #1b6d85; width: 150px; height: 150px; display: inline-block;"></div>
+        <img src="assets/images/profile1.jpg" alt="John Doe photo" style="background-color: #1b6d85; width: 150px; height: 150px; display: inline-block;">
       </div>
 
       <div class="grid-6">
-        <h1>Joshua Uyi</h1>
-        <p>Joined sometime</p>
-        <p><a href="">Edit profile</a></p>
+        <h1>John Doe</h1>
+        <div>john.doe</div>
+        <div><a href="edit-profile.html">Edit profile</a></div>
       </div>
     </div>
 
@@ -60,23 +70,23 @@
         <div class="grid-12 text-center" style="font-weight: bold; margin-bottom: 6px">Red-Flags</div>
         <div class="grid-12 text-center">
           <div class="grid-3 sustain">
-            <div>Created</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Created</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div>Pending</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Pending</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div>Resolved</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Resolved</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div>Rejected</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Rejected</div>
           </div>
         </div>
       </div>
@@ -89,23 +99,23 @@
         <div class="grid-12 text-center" style="font-weight: bold; margin-bottom: 6px">Interventions</div>
         <div class="grid-12 text-center">
           <div class="grid-3 sustain">
-            <div>Created</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Created</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div>Pending</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Pending</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div>Resolved</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Resolved</div>
           </div>
 
           <div class="grid-3 sustain">
-            <div>Rejected</div>
-            <div>34</div>
+            <div class="situation-count">34</div>
+            <div class="situation-state">Rejected</div>
           </div>
         </div>
       </div>
@@ -131,16 +141,16 @@
           <tbody>
           <tr>
             <td>Local government chairman compromised</td>
-            <td><i class="dot bg-info"></i> pending</td>
+            <td><i class="dot bg-dark"></i> pending</td>
             <td><a href="">17.2465864, 4.189465457</a></td>
-            <td>&#8285;</td>
+            <td><button class="btn btn-info sm"><i class="ic ic-edit"></i></button> <button class="btn btn-danger sm"><i class="ic ic-delete"></i></button></td>
           </tr>
 
           <tr>
             <td>Excesive bribes collected by police force</td>
             <td><i class="dot bg-danger"></i> rejected</td>
             <td><a href="">17.2465864, 4.189465457</a></td>
-            <td style="con">&#8285;</td>
+            <td></td>
           </tr>
           </tbody>
         </table>
@@ -152,8 +162,39 @@
 
       <h2>Interventions</h2>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium, debitis eius, error eum excepturi exercitationem illum maiores
-        officiis placeat praesentium recusandae reprehenderit saepe sapiente sequi soluta tempora vitae, voluptatum.
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Location</th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Drainage system blocked</td>
+            <td><i class="dot bg-success"></i> resolved</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Flooding in area</td>
+            <td><i class="dot bg-dark"></i> pending</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td><button class="btn btn-info sm"><i class="ic ic-edit"></i></button> <button class="btn btn-danger sm"><i class="ic ic-delete"></i></button></td>
+          </tr>
+
+          <tr>
+            <td>No electricity supply for 3 weeks</td>
+            <td><i class="dot bg-info"></i> under investigation</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
