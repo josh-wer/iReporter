@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Incident</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="assets/css/app.css"/>
+
+</head>
+<body>
+<nav class="nav">
+  <div style="float: left; color: white; font-size: 20px; padding: 24px 18px; margin-right: 8px;">
+    iReporter
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="admin/incidents.html">Admin</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+
+  <ul class="right">
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="register.html">Sign up</a></li>
+    <li><a href="login.html">Sign in</a></li>
+  </ul>
+</nav>
+<div style="height: 70px;"></div>
+<br><br><br>
+
+<div class="grids">
+
+  <div class="grid-4 centralize">
+
+    <h3 class="text-center">Report an incident</h3>
+
+    <form action="#" method="post">
+      <div class="grids">
+        <label class="grid-12" for="c-incident-type">Type</label>
+        <div class="grid-12">
+          <select name="type" id="c-incident-type" class="form-input" required>
+            <option value="red-flag">Red flag</option>
+            <option value="intervention">Intervention</option>
+          </select>
+        </div>
+      </div>
+      <br>
+
+      <div class="grids">
+        <label class="grid-12" for="c-incident-title">Title</label>
+        <div class="grid-12">
+          <input type="text" name="title" class="form-input" id="c-incident-title" placeholder="Title">
+        </div>
+      </div>
+      <br>
+
+      <div class="grids">
+        <label class="grid-12" for="c-incident-comment">Comment</label>
+        <div class="grid-12">
+          <textarea name="comment" id="c-incident-comment" class="form-input" placeholder="Comment"></textarea>
+        </div>
+      </div>
+      <br>
+
+      <div class="grids">
+        <label class="grid-12" for="c-incident-title">Location</label>
+        <div class="grid-12">
+          <div style="width: calc(100% - 100px); float: left;">
+            <input type="text" name="latitude" class="form-input" id="c-incident-latitude" placeholder="Latitude" style="width: 50%; float: left;">
+            <input type="text" name="longitude" class="form-input" id="c-incident-longitude" placeholder="Longitude" style="width: 50%; float: left;">
+          </div>
+          <button type="button" style="width: 100px; float: left; min-height: 33px;" class="btn xs btn-primary">Choose from map</button>
+        </div>
+      </div>
+      <br>
+
+      <div class="grid-12">
+        <label class="btn btn-primary">
+          Add media
+          <input type="file" name="media" id="c-incident-media" style="display: none;" multiple accept="image/*,video/*">
+        </label>
+      </div>
+      <br><br><br><br>
+
+      <div class="grid-12">
+        <button type="submit" class="btn btn-primary" name="login">Create Incident</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
