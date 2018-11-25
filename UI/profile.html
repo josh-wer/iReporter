@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="assets/css/app.css"/>
+
+  <style>
+    table.table{
+      font-size: 12px;
+    }
+
+    table.table th{
+      padding: 8px 14px;
+    }
+
+    table.table td{
+      padding: 14px 20px;
+    }
+
+    .situation-count{
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .situation-state{
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+<nav class="nav">
+  <div style="float: left; color: white; font-size: 20px; padding: 24px 18px; margin-right: 8px;">
+    iReporter
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="admin/incidents.html">Admin</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+
+  <ul class="right">
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="register.html">Sign up</a></li>
+    <li><a href="login.html">Sign in</a></li>
+  </ul>
+</nav>
+<div style="height: 100px;"></div>
+
+<div class="container">
+  <div class="grids">
+    <div class="grid-6">
+      <div class="grid-6 text-center">
+        <img src="assets/images/profile1.jpg" alt="John Doe photo" style="background-color: #1b6d85; width: 150px; height: 150px; display: inline-block;">
+      </div>
+
+      <div class="grid-6">
+        <h1>John Doe</h1>
+        <div>john.doe</div>
+        <div><a href="edit-profile.html">Edit profile</a></div>
+      </div>
+    </div>
+
+    <div class="grid-6">
+      <div class="grid-12">
+        <div class="grid-12 text-center" style="font-weight: bold; margin-bottom: 6px">Incidents</div>
+        <div class="grid-12 text-center">
+          <div class="grid-3 sustain" title="20 red-flags and 14 interventions">
+            <div class="situation-count">34</div>
+            <div class="situation-state">Created</div>
+          </div>
+
+          <div class="grid-3 sustain">
+            <div class="situation-count">10</div>
+            <div class="situation-state">Under investigation</div>
+          </div>
+
+          <div class="grid-3 sustain">
+            <div class="situation-count">9</div>
+            <div class="situation-state">Rejected</div>
+          </div>
+
+          <div class="grid-3 sustain">
+            <div class="situation-count">15</div>
+            <div class="situation-state">Resolved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="grids">
+    <div class="grid-10 centralize">
+      <h2>Created Incidents</h2>
+
+      <div class="text-right">
+        <a href="create-incident.html" class="btn btn-primary sm">+ Report incident</a>
+        <br><br>
+      </div>
+
+      <div>
+        <table class="table">
+          <thead>
+          <tr>
+            <th></th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Location</th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <tr>
+            <td>Red-flags</td>
+            <td><a href="view-incident.html">Local government chairman compromised</a></td>
+            <td><i class="dot bg-dark"></i> draft</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td><a href="edit-incident.html" class="btn btn-info xs"><i class="ic ic-edit"></i></a> <button class="btn btn-danger xs"><i class="ic ic-delete"></i></button></td>
+          </tr>
+
+          <tr>
+            <td>Interventions</td>
+            <td><a href="view-incident.html">Drainage system blocked</a></td>
+            <td><i class="dot bg-success"></i> resolved</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Interventions</td>
+            <td><a href="view-incident.html">Flooding in area</a></td>
+            <td><i class="dot bg-dark"></i> draft</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td><a href="edit-incident.html" class="btn btn-info xs"><i class="ic ic-edit"></i></a> <button class="btn btn-danger xs"><i class="ic ic-delete"></i></button></td>
+          </tr>
+
+          <tr>
+            <td>Red-flags</td>
+            <td><a href="view-incident.html">Excessive bribes collected by police force</a></td>
+            <td><i class="dot bg-danger"></i> rejected</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Interventions</td>
+            <td><a href="view-incident.html">No electricity supply for 3 weeks</a></td>
+            <td><i class="dot bg-info"></i> under investigation</td>
+            <td><a href="">17.2465864, 4.189465457</a></td>
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

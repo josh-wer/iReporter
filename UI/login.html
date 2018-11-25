@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign in</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="assets/css/app.css"/>
+
+  <style>
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      border: .0625rem solid rgba(0, 0, 0, .05);
+      border-radius: .25rem;
+      /*background-color: #fff;*/
+      background-clip: border-box;
+      box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+      /*border: 0 !important;*/
+      background-color: #f4f5f7 !important;
+      padding: 20px;
+    }
+
+    .card-title{
+      text-align: center;
+      font-size: 18px;
+      color: #1f1f1f;
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div style="float: left; color: white; font-size: 20px; padding: 24px 18px; margin-right: 8px;">
+    iReporter
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="admin/incidents.html">Admin</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+
+  <ul class="right">
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="register.html">Sign up</a></li>
+    <li><a href="login.html">Sign in</a></li>
+  </ul>
+</nav>
+<div style="height: 70px;"></div>
+<br><br><br>
+
+<div class="grids">
+
+  <div class="grid-3 centralize">
+
+    <div class="card">
+      <h3 class="card-title">Sign in</h3>
+
+      <form action="#" method="post">
+        <div class="grids">
+          <label class="grid-12" for="reg-username">Username</label>
+          <div class="grid-12">
+            <input type="text" name="username" class="form-input" id="reg-username" placeholder="Username">
+          </div>
+        </div>
+        <br>
+
+        <div class="grids">
+          <label class="grid-12 " for="reg-password">Password</label>
+          <div class="grid-12">
+            <input type="password" name="password" class="form-input" id="reg-password" placeholder="Password">
+          </div>
+        </div>
+
+        <div class="grid-12">
+          <button type="submit" class="btn btn-primary" name="login">Sign in</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
