@@ -1,6 +1,9 @@
+let Incidents = require('./controllers/Incidents');
+
 const express = require('express');
 let app = express();
 
-app.get('/', (req, res) => res.send('Hello World'));
+
+app.get('/api/v1/red-flags/:id(\\d+)', Incidents.find);
 
 app.listen(3030);
