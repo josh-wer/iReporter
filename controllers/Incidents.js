@@ -1,8 +1,7 @@
-
 const incidents = require('../incidents');
 
 const Incidents = {
-  index(req, res){
+  index(req, res) {
     res.send({
       status: req.statusCode || 200,
       data: incidents
@@ -11,10 +10,10 @@ const Incidents = {
 
   find(req, res) {
     const redFlagId = req.params.id;
-    let sendIncident = {};
+    let sendIncident = null;
     for (let incident of incidents) {
       if (incident.id == redFlagId) {
-        sendIncidente = incident;
+        sendIncident = incident;
         break;
       }
       // res.write(incident.id);
@@ -22,29 +21,29 @@ const Incidents = {
 
     res.send({
       status: req.statusCode || 200,
-      data: [sendIncident]
+      data: (sendIncident) ? [sendIncident] : []
     });
   },
 
-  store(req, res){
+  store(req, res) {
 
     res.send({
       status: req.statusCode || 200,
       data: [{
         id: 3,
-        message : 'Created red-flag record'
+        message: 'Created red-flag record'
       }]
     });
   },
 
-  updateLocation(req, res){
+  updateLocation(req, res) {
     const redFlagId = req.params.red_flag_id;
 
     res.send({
       status: req.statusCode || 200,
       data: [{
         id: redFlagId,
-        message : 'Updated red-flag record\'s location'
+        message: 'Updated red-flag record\'s location'
       }]
     });
   }
